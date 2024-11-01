@@ -1,0 +1,240 @@
+
+/*#wpcb_confessions{
+  border-bottom: 16px solid skyblue;
+}*/
+#confessions_area_inner {
+  border: 3px solid #eee;
+  height: 600px;
+  width: 100%;
+  overflow: auto;
+}
+#wpcb_confessions:first-child{
+  margin-top: 20px;
+}
+
+#wpcb_confessions div{
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+#conf_comment_list{
+  max-height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.hide_new{
+  display: none;
+}
+.show_new{
+  display: block;
+}
+.new_feeds {
+    background: #fff;
+    border-radius: 10px;
+    font-size: 14px;
+    margin: 5px auto;
+    position: relative;
+    text-align: center;
+    top: 57px;
+    width: 25%;
+    color: #000;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#odd_confessions, #even_confessions {
+  float: left;
+  padding: 20px;
+  width: 100%;
+}
+#confessions_area_inner p:first-child{
+  background: #eee none repeat scroll 0 0;
+
+}
+#confessions_area_inner p {
+
+  border: 3px solid skyblue;
+  border-radius: 0;
+  color: #202020;
+  float: left;
+  font-family: verdana;
+  font-size: 12px;
+  /*margin: 23px;*/
+  padding: 20px;
+  width: 100%;
+}
+#confession_form{
+  width: 100%;
+  display: inline-block;
+}
+#confession_form label, #confession_form input[type="text"], #confession_form input[type="email"], #confession_form select, #confession_form textarea {
+  border-radius: 3px;
+    float: left;
+    margin: 5px auto;
+    width: 100%;
+}
+#confession_form input[type="button"]{
+background:skyblue;border: none; color: #fff;text-align: center;float: left;
+}
+#confession_form textarea{
+	min-height:200px;
+	clear: both;
+	width:100%;
+}
+
+.show-success{
+  border: 2px solid green !important;
+}
+
+.show-danger{
+  border: 2px solid red !important;
+}
+
+.show-warning{
+  border: 2px solid orange !important;
+}
+
+.like-cf:hover,.dashicons:hover,.liked,.disliked,.blocked{
+  color: skyblue;
+  cursor: pointer;
+}
+
+/*#cb_who_liked{
+margin-left: 159px;
+}
+#cb_who_disliked{
+margin-left: 221px;
+}*/
+#confessions_area_inner p strong:first-child{
+  text-transform: uppercase;
+}
+#cb_who_liked, #cb_who_disliked {
+  height: 200px;
+  margin-top: 26px;
+  overflow-y: auto;
+  overflow-x:hidden;
+  position: absolute;
+  width: 13%;
+}
+
+.hide{
+  display: none;
+}
+
+#cb_who_liked > li ,#cb_who_disliked > li{
+  background: #000 none repeat scroll 0 0;
+  color: #eee;
+  list-style: outside none none;
+  opacity: 0.78;
+  padding: 5px;
+}
+
+#cb_who_liked > em, #cb_who_disliked > em {
+  background: #000 none repeat scroll 0 0;
+  clear: both;
+  color: #eee;
+  float: left;
+  list-style: outside none none;
+  opacity: 0.78;
+  padding: 5px;
+  width: 100%;
+}
+
+.wpcb_messages{
+    border: 2px solid green;
+    font-family: verdana;
+    font-size: 14px;
+    margin: 20px auto;
+    text-align: center;
+    display: none;
+}
+.conf_comments_container textarea{
+width: 100%; resize: none; overflow: auto; overflow-wrap: break-word; height: 100%;background: #fff;
+}
+#conf_comment_list li {
+  list-style: outside none none;
+  border-bottom: 1px solid #eee;
+  line-height:2;
+}
+#confessions_area_inner .comment_head{
+  custor:pointer;
+  /*text-align: center;*/
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+#conf_comment_list li span.dashicons-no-alt{
+  /*display:none;*/
+  float: right;
+  border: 1px solid grey;
+}
+
+#conf_comment_list li:hover span.dashicons-no-alt{
+  display:block;
+}
+.wpcb_clear {
+    border: 3px dashed skyblue;
+    clear: both;
+    margin: 28px 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+}
+.wpcb_half {
+    width: 45%;
+    float: left;
+    margin: 20px;
+}
+.wpcb_half .wpcb_likes li {
+    float: left;
+    list-style: none;
+    background: #eee;
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.wpcb_likes,.wpcb_comments div{
+  max-height: 200px;
+  overflow: auto;
+}
+.wpcb_likes, .wpcb_comments {
+    float: left;
+    clear: both;
+    width: 100%;
+}
+#wpcb_settings_container li{
+  list-style-type: none;
+}
+#wpcb_single_confession{
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    margin: 30px auto;
+    padding: 0;
+    display: none;
+    z-index: 999 !important;
+    top: 0;
+    bottom: 0;
+}
+.wpcb_read_more{
+      text-align: center;
+    color: skyblue;
+    background: #eee;
+    width: 100px;
+    margin: auto;
+    padding: 5px;
+    cursor: pointer;
+}
+#wpcb_single_confession_inner{
+      width: 77%;
+    margin: 0 30px;
+    max-height: 600px;
+    overflow: auto;
+}
+@media screen and (max-width: 767px) {
+  #odd_confessions, #even_confessions {
+  width: 100%;
+}
+.conf_comments_container * {
+  width: 100% !important;
+}
+}

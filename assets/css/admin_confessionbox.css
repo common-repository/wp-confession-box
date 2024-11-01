@@ -1,0 +1,19 @@
+/*#wpcb_single_confession{
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    margin: 30px auto;
+    padding: 0;
+     display: none; 
+    z-index: 999 !important;
+    top: 0;
+    bottom: 0;
+}*/
+
+#wpcb_settings_container table ol li{
+    border-bottom: 2px dotted #eee !important;
+    margin: 20px 0 !important;
+}
+.wp-picker-container{
+	display: inline-block !important;
+}
